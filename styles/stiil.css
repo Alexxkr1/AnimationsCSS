@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Stick+No+Bills:wght@600&display=swap');
+
+:root {
+    --headings: #91972a;
+    --text:  #fff;
+    --backround: #e6d3a3;
+    --Headings-Font-family: 'Stick No Bills', sans-serif;
+    --Text-Font-family: 'Noto Sans JP', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(37, 94, 52);
+    font-family: var(--Text-Font-family);
+    color: var(--text);
+    overflow: hidden;
+}
+
+.header h1{
+    font-family: var(--Headings-Font-family);
+    font-size: 3,5rem;
+    text-transform: uppercase;
+    position: relative;
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0% {top: -100px }
+    100% {top: 150px;}
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header{
+    height: 250px;
+    text-align: center;
+}
+
+.main{
+    margin: 2rem;
+}
+
+.text-left{
+    text-align: justify;
+    position: relative;
+    animation: textleft;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes textleft{
+    0% {left: -150px}
+    85% {left: 50px}
+    100% {left: 0;}
+}
+
+
+.text-right{
+    text-align: right;
+    margin-top: 2rem;
+    text-justify: inter-word;
+    position: relative;
+    animation: textright;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textright{
+    0% {right: -150px}
+    85% {right: -50px}
+    100% {right: 0;}
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    border: 2px solid white;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    animation: btn;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn{
+    0% {bottom: -150px}
+    100% {bottom: 0;}
+    0% {opacity: 0}
+    100% {bottom: 1;}
+}
+
+.footer{
+    text-align: center;
+}
